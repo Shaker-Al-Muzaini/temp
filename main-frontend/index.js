@@ -93,8 +93,9 @@ app.get('/ar/search', Arabic.Search);
 app.get('/:slug', English.Slug);
 app.get('/ar/:slug', Arabic.Slug);
 
-app.listen(process.env.MAIN_FE_PORT || 3000, () => {
-    console.log(
-        `Server is running on port ${process.env.MAIN_FE_PORT || 3000}`
-    );
-});
+// app.listen(process.env.MAIN_FE_PORT || 3000, () => {
+//     console.log(
+//         `Server is running on port ${process.env.MAIN_FE_PORT || 3000}`
+//     );
+// });
+module.exports = app;
